@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Music player
+    </title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= device-width, initial-scale =1 , minimun-scale=1">
+
+</head>
+
+<body>
+    <!------------ Navigation ------------>
+    <nav class="nav">
+        <header class="navigation">
+            <div class="logo_left">
+                <ul>
+                    <li>
+                        <a href=" index.html "><img src="image/logo2-removebg-preview.png"></a>
+                    </li>
+                    <li>
+                        Ninja
+
+                    </li>
+                    <li> Favourities</li>
+                </ul>
+            </div>
+            <div class="logo_right">
+                <ul>
+                    <li>
+                        <i class="fas fa-search"></i><input type="text" placeholder="Search" name="search"><i class="fas fa-microphone"></i> </li>
+                    <li class="logo_bell"><i class="far fa-bell"></i></li>
+                    <li class="user_image"><img src="image/WhatsApp Image 2020-09-28 at 4.36.47 PM.jpeg" alt=""></li>
+                </ul>
+            </div>
+        </header>
+    </nav>
+    <!------------ Main ------------>
+    <main class="main_container_fluid">
+        <div class="main">
+            <!------------ main_left content  ------------>
+            <div class="main_left">
+                <!-- <div id="slider">
+                <figure>
+                    <img src="image/photo-1516450360452-9312f5e86fc7.jpg">
+                    <img src="image/photo-1489641493513-ba4ee84ccea9.jpg">
+                    <img src="image/photo-1499424017184-418f6808abf9.jpg">
+                    <img src="image/photo-1524368535928-5b5e00ddc76b.jpg">
+                </figure>
+            </div> -->
+                <!------------ Top banner  ------------>
+                <section class="top_slider">
+                    <div class="top_slider_img"> <img src="image/photo-1489641493513-ba4ee84ccea9.jpg"></div>
+                    <div class="top_slider_img"> <img src="image/photo-1516450360452-9312f5e86fc7.jpg"></div>
+                    <div class="top_slider_img"> <img src="image/photo-1499424017184-418f6808abf9.jpg"></div>
+                </section>
+                <!------------ Latest Release  ------------>
+                <section class="latest_release_section">
+                    <h5> Latest Release</h5>
+                    <div class="latest_release">
+                        <div class="latest_release_col">
+                            <div class="latest_vid">
+                                <img class="vid" src="image/photo-1524368535928-5b5e00ddc76b.jpg">
+                                <a href=""><i class="fas fa-play"></i></a>
+                            </div>
+                            <div class="latest_release_title">
+                                <p>Onism <br> <span> AUG 11, 2019 </span></p>
+                            </div>
+
+                            <div class="latest_release_time">
+                                <i class="fas fa-ellipsis-h"></i>
+                                <p>4.PM</p>
+                            </div>
+
+                        </div>
+
+                        <div class="latest_release_col">
+                            <div class="latest_vid">
+                                <!-- <video class="vid" controls>
+                            <source src="image/Tum Itna Jo - Papon - MTV Unplugged.webm" type="video/mp4">
+                            <source src="image/Tum Itna Jo - Papon - MTV Unplugged.webm" type="video/ogg">
+                          </video> -->
+                                <img class="vid" src="image/photo-1524368535928-5b5e00ddc76b.jpg">
+                                <a href=""><i class="fas fa-play"></i></a>
+                            </div>
+                            <div class="latest_release_title">
+                                <p>Onism <br> <span> AUG 11, 2019 </span></p>
+                            </div>
+                            <div class="latest_release_time">
+                                <a href="#lightbox"> <i class="fas fa-ellipsis-h"></i></a>
+                                <p>4.PM</p>
+                                <div class="lightbox_latestrelease" id="lightbox">
+                                    <ul> <a class="cross" href="#">X</a>
+                                        <li><i class="fas fa-play"></i>Play now</li>
+                                        <li><i class="fas fa-plus"></i>add to Queue</li>
+                                        <li><i class="fas fa-heart"></i>Add to Favourities</li>
+                                        <li><i class="fas fa-info-circle"></i>Get Info</li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="latest_release_col">
+                            <div class="latest_vid">
+                                <img class="vid" src="image/photo-1524368535928-5b5e00ddc76b.jpg">
+                                <a href=""><i class="fas fa-play"></i></a>
+                            </div>
+                            <div class="latest_release_title">
+                                <p>Onism <br> <span> AUG 11, 2019 </span></p>
+                            </div>
+                            <div class="latest_release_time">
+                                <i class="fas fa-ellipsis-h"></i>
+                                <p>4.PM</p>
+                            </div>
+                        </div>
+
+                        <div class="latest_release_col">
+                            <div class="latest_vid">
+                                <img class="vid" src="image/photo-1524368535928-5b5e00ddc76b.jpg">
+                                <a href=""><i class="fas fa-play"></i></a>
+                            </div>
+                            <div class="latest_release_title">
+                                <p>Onism <br> <span> AUG 11, 2019 </span></p>
+                            </div>
+                            <div class="latest_release_time">
+                                <i class="fas fa-ellipsis-h"></i>
+                                <p>4.PM</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+                <!------------ Popular Artist  ------------>
+                <section class="popular_artist_section">
+                    <h5> Popular Artist</h5>
+                    <ul class="popular">
+                        <li>
+                            <a href="popular-artist.html"> <img src="image/singer.jpg"></a>
+                            <p>Cold play</p>
+                            <a href="popular-artist.html"><i class="fas fa-play"></i></a>
+                        </li>
+                        <li>
+                            <a href="popular-artist.html"><img src="image/singer2.jpg"></a>
+                            <p>xyan</p>
+                            <a href="popular-artist.html"><i class="fas fa-play"></i></a>
+                        </li>
+                        <li>
+                            <a href="popular-artist.html"><img src="image/singer3.jpg"></a>
+                            <p>sd ransnm</p>
+                            <a href="popular-artist.html"><i class="fas fa-play"></i></a>
+                        </li>
+                        <li>
+                            <a href="popular-artist.html"> <img src="image/singer4.jpg"></a>
+                            <p>sourav tis </p>
+                            <a href="popular-artist.html"><i class="fas fa-play"></i></a>
+                        </li>
+                        <li>
+                            <a href="popular-artist.html"><img src="image/singer5.jpg"></a>
+                            <p>Jynap gaub</p>
+                            <a href="popular-artist.html"><i class="fas fa-play"></i></a>
+                        </li>
+                        <li>
+                            <a href="popular-artist.html"><img src="image/singer6.jpg"></a>
+                            <p>brono mars</p>
+                            <a href="popular-artist.html"><i class="fas fa-play"></i></a>
+                        </li>
+                    </ul>
+                </section>
+
+                <section class="playmusic">
+
+                    <img src="image/playmusic.png">
+                    <div class="popular_next">
+                        <img src="image/singer.jpg">
+                        <div class="background-black_div">
+                            <div class="zoom_image_text"> Love</div>
+                        </div>
+                    </div>
+                    <div class="popular_next">
+                        <img src="image/singer2.jpg">
+                        <div class="background-black_div">
+                            <div class="zoom_image_text"> Chill</div>
+                        </div>
+                    </div>
+                    <div class="popular_next">
+                        <img src="image/singer3.jpg">
+                        <div class="background-black_div">
+                            <div class="zoom_image_text"> Retro</div>
+                        </div>
+                    </div>
+                    <div class="popular_next">
+                        <img src="image/singer4.jpg">
+                        <div class="background-black_div">
+                            <div class="zoom_image_text"> WorkOut</div>
+                        </div>
+                    </div>
+                    <div class="popular_next">
+                        <img src="image/singer5.jpg">
+                        <div class="background-black_div">
+                            <div class="zoom_image_text"> Party</div>
+                        </div>
+                    </div>
+                    <div class="popular_next">
+                        <img src="image/singer6.jpg">
+                        <div class="background-black_div">
+                            <div class="zoom_image_text"> Pop</div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="zoom_image">
+                    <div class="geeks">
+                        <img src="image/latest5.jpg">
+                        <div class="background-black">
+                            <div class="zoom_image_text"> party</div>
+                        </div>
+                    </div>
+
+                    <div class="geeks">
+                        <img src="image/latest7.jpg">
+                        <div class="background-black">
+                            <div class="zoom_image_text">road trip</div>
+                        </div>
+                    </div>
+                    <div class="geeks">
+                        <img src="image/latest9.jpg">
+                        <div class="background-black">
+                            <div class="zoom_image_text">Electronic</div>
+                        </div>
+                    </div>
+
+                </section>
+                <!------------ Latest English  ------------>
+                <section class="latest_english_section">
+                    <h5>Latest English</h5>
+                    <ul class="latest_english">
+                        <li> <img src="image/singer.jpg" />
+                            <p>Cold play
+                                <br> <span> AUG 11, 2019 </span>
+                            </p>
+                        </li>
+                        <li> <img src="image/singer2.jpg" />
+                            <p> xyan
+                                <br> <span> AUG 11, 2019 </span>
+                            </p>
+                        </li>
+                        <li> <img src="image/singer3.jpg" />
+                            <p>sd ransnm <br> <span> AUG 11, 2019 </span></p>
+                        </li>
+                        <li> <img src="image/singer4.jpg" />
+                            <p>sourav tis <br> <span> AUG 11, 2019 </span></p>
+                        </li>
+                        <li> <img src="image/singer5.jpg">
+                            <p>Jynap gaub <br> <span> AUG 11, 2019 </span></p>
+                        </li>
+                        <li> <img src="image/singer6.jpg">
+                            <p>brono mars <br> <span> AUG 11, 2019 </span></p>
+                        </li>
+                    </ul>
+                </section>
+                <!------------ Latest Hindi  ------------>
+                <section class="latest_hindi_section">
+                    <h5>Latest Hindi</h5>
+                    <ul class="latest_english">
+                        <li> <img src="image/singer.jpg">
+                            <p>Cold play
+                                <br> <span> AUG 11, 2019 </span>
+                            </p>
+                        </li>
+                        <li> <img src="image/singer2.jpg">
+                            <p> xyan <br> <span> AUG 11, 2019 </span></p>
+                        </li>
+                        <li> <img src="image/singer3.jpg">
+                            <p>sd ransnm <br> <span> AUG 11, 2019 </span></p>
+                        </li>
+                        <li> <img src="image/singer4.jpg">
+                            <p>sourav tis <br> <span> AUG 11, 2019 </span></p>
+                        </li>
+                        <li> <img src="image/singer5.jpg">
+                            <p>Jynap gaub <br> <span> AUG 11, 2019 </span></p>
+                        </li>
+                        <li> <img src="image/singer6.jpg">
+                            <p>brono mars <br> <span> AUG 11, 2019 </span></p>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+            <!------------ Aside Queue  ------------>
+            <aside class="main_right">
+                <div class="queue_heading">
+                    <h4>Queue <span>Queue<a href="#comments"> <i class="fas fa-angle-down"></i></a>
+                     <ul class="queue_block" id="comments">
+                        <a class="cross" href="#">X</a>
+                         <li>Playlists</li>
+                         <li>Favourite Songs</li>
+                     </ul>
+                    </span></h4>
+                </div>
+
+                <div class="queue_list">
+                    <ul>
+                        <li>01</li>
+                        <li> <img src="image/Latest.jpg"></li>
+                        <li class="queue_list_title">
+                            <p>Mirage
+                                <br> <span> else </span>
+                            </p>
+                        </li>
+                        <li class="queue_list_heart"> <i class="far fa-heart"></i></li>
+                    </ul>
+                </div>
+                <div class="queue_list">
+                    <ul>
+                        <li>02</li>
+                        <li> <img src="image/latest2.jpg"></li>
+                        <li class="queue_list_title">
+                            <p>Worry about us
+                                <br> <span> about</span>
+                            </p>
+                        </li>
+                        <li class="queue_list_heart"> <i class="far fa-heart"></i></li>
+                    </ul>
+                </div>
+
+                <div class="queue_list">
+                    <ul>
+                        <li>03</li>
+                        <li> <img src="image/latest3.jpg"></li>
+                        <li class="queue_list_title">
+                            <p>New skin
+                                <br> <span> Flun</span>
+                            </p>
+                        </li>
+                        <li class="queue_list_heart"> <i class="far fa-heart"></i></li>
+                    </ul>
+                </div>
+                <div class="queue_list">
+                    <ul>
+                        <li>04</li>
+                        <li> <img src="image/latest4.jpg"></li>
+                        <li class="queue_list_title">
+                            <p>Long drive
+                                <br> <span>run</span>
+                            </p>
+                        </li>
+                        <li class="queue_list_heart"> <i class="far fa-heart"></i></li>
+                    </ul>
+                </div>
+                <div class="queue_list">
+                    <ul>
+                        <li>05</li>
+                        <li> <img src="image/latest5.jpg"></li>
+                        <li class="queue_list_title">
+                            <p> Drive hard
+                                <br> <span>Hardsn</span>
+                            </p>
+                        </li>
+                        <li class="queue_list_heart"> <i class="far fa-heart"></i></li>
+                    </ul>
+                </div>
+
+                <div class="queue_list">
+                    <ul>
+                        <li>06</li>
+                        <li> <img src="image/latest2.jpg"></li>
+                        <li class="queue_list_title">
+                            <p>Worry about us
+                                <br> <span>about</span>
+                            </p>
+                        </li>
+                        <li class="queue_list_heart"> <i class="far fa-heart"></i></li>
+                    </ul>
+                </div>
+                <div class="queue_list">
+                    <ul>
+                        <li>07</li>
+                        <li> <img src="image/latest3.jpg"></li>
+                        <li class="queue_list_title">
+                            <p>New skin
+                                <br> <span>Flun</span>
+                            </p>
+                        </li>
+                        <li class="queue_list_heart"> <i class="far fa-heart"></i></li>
+                    </ul>
+                </div>
+                <div class="queue_list">
+                    <ul>
+                        <li>08</li>
+                        <li> <img src="image/latest4.jpg"></li>
+                        <li class="queue_list_title">
+                            <p>Long drive
+                                <br> <span>run <span>
+                        </p>
+                    </li>
+                    <li class="queue_list_heart"> <i class="far fa-heart"></i></li>
+                </ul>
+                </div>
+                <div class="queue_list">
+                <ul>
+                    <li>09</li>
+                    <li> <img src="image/latest5.jpg"></li>
+                    <li class="queue_list_title">
+                        <p> Drive hard
+                            <br> <span>Hardsn</span>
+                            </p>
+                        </li>
+                        <li class="queue_list_heart"> <i class="far fa-heart"></i></li>
+                    </ul>
+                </div>
+                <div class="queue_list">
+                    <ul>
+                        <li>10</li>
+                        <li> <img src="image/Latest.jpg"></li>
+                        <li class="queue_list_title">
+                            <p>Mirage
+                                <br> <span>else</span>
+                            </p>
+                        </li>
+                        <li class="queue_list_heart"> <i class="far fa-heart"></i></li>
+                    </ul>
+                </div>
+                <div class="queue_list">
+                    <ul>
+                        <li>06</li>
+                        <li> <img src="image/latest2.jpg"></li>
+                        <li class="queue_list_title">
+                            <p>Worry about us
+                                <br> <span>about</span>
+                            </p>
+                        </li>
+                        <li class="queue_list_heart"> <i class="far fa-heart"></i></li>
+                    </ul>
+                </div>
+                <div class="queue_list">
+                    <ul>
+                        <li>07</li>
+                        <li> <img src="image/latest3.jpg"></li>
+                        <li class="queue_list_title">
+                            <p>New skin
+                                <br> <span>Flun</span>
+                            </p>
+                        </li>
+                        <li class="queue_list_heart"> <i class="far fa-heart"></i></li>
+                    </ul>
+                </div>
+                <div class="queue_list">
+                    <ul>
+                        <li>08</li>
+                        <li> <img src="image/latest4.jpg"></li>
+                        <li class="queue_list_title">
+                            <p>Long drive
+                                <br> <span>run <span>
+                        </p>
+                    </li>
+                    <li class="queue_list_heart"> <i class="far fa-heart"></i></li>
+                </ul>
+                </div>
+                <div class="queue_list">
+                <ul>
+                    <li>09</li>
+                    <li> <img src="image/latest5.jpg"></li>
+                    <li class="queue_list_title">
+                        <p> Drive hard
+                            <br> <span>Hardsn</span>
+                            </p>
+                        </li>
+                        <li class="queue_list_heart"> <i class="far fa-heart"></i></li>
+                    </ul>
+                </div>
+                <div class="queue_list">
+                    <ul>
+                        <li>10</li>
+                        <li> <img src="image/Latest.jpg"></li>
+                        <li class="queue_list_title">
+                            <p>Mirage
+                                <br> <span>else</span>
+                            </p>
+                        </li>
+                        <li class="queue_list_heart"> <i class="far fa-heart"></i></li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+    </main>
+    <!------------ Music Video Controls------------>
+    <div class="music_controls">
+        <div class="controls">
+            <div class="controls_left">
+                <ul>
+                    <li>
+                        <img src="image/latest7.jpg">
+                    </li>
+                    <li>
+                        <p>Garmi (From "Street Dancer") (Feet....
+                            <br>
+                            <span>Badhshah, Neha Kakkar</span>
+                        </p>
+                    </li>
+                    <li><i class="fas fa-ban"></i></li>
+                    <li><i class="far fa-heart"></i></li>
+                </ul>
+            </div>
+            <div class="controls_middle">
+                <div class="playericons">
+                    <a href=""><i class="fas fa-random"></i></a>
+                    <a href=""><i class="fas fa-arrow-alt-circle-left"></i></a>
+
+                    <a href=""><i class="fas fa-play"></i></a>
+                    <a href=""><i class="fas fa-arrow-alt-circle-right"></i></a>
+
+                    <a href=""><i class="fas fa-retweet"></i></a>
+
+                </div>
+                <div class="time">
+                    <a href="">1.58</a>
+                    <a href="">3.56</a>
+                </div>
+                <div class="seek">
+                    <div class="fill "></div>
+                    <div class="handle"></div>
+                </div>
+
+            </div>
+            <div class="controls_right">
+                <div class="controls_right_icons">
+                    <a href=""><i class="fas fa-sort-amount-down"></i></a>
+
+                    <a href=""><i class="fas fa-mobile-alt"></i></i></a>
+                    <a href=""><i class="fas fa-volume-up"></i></a>
+                </div>
+
+                <div class="seek2">
+                    <div class="fill2"></div>
+                    <div class="handle2"></div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
